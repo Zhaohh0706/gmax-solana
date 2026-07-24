@@ -200,7 +200,7 @@
       <div class="ca-box">
         <div class="ca-label">Contract Address</div>
         <div class="ca-row">
-          <div class="ca" id="ca">PENDING_LAUNCH — run deploy script</div>
+          <div class="ca" id="ca">5mB6hVACwaXiLXNXLe5En3KzCxuEyYcfveMGWT9wj4sh</div>
           <button class="copy" id="copyBtn" type="button">Copy</button>
         </div>
       </div>
@@ -255,12 +255,12 @@
   <script>
     // Filled by deploy script (metadata.js) if present
     window.GMAX = window.GMAX || {
-      mint: "PENDING_LAUNCH",
-      pumpUrl: "https://pump.fun"
+      mint: "5mB6hVACwaXiLXNXLe5En3KzCxuEyYcfveMGWT9wj4sh",
+      pumpUrl: "https://pump.fun/coin/5mB6hVACwaXiLXNXLe5En3KzCxuEyYcfveMGWT9wj4sh"
     };
     function applyMeta() {
-      const mint = window.GMAX.mint || "PENDING_LAUNCH";
-      const pumpUrl = mint && mint !== "PENDING_LAUNCH"
+      const mint = window.GMAX.mint || "5mB6hVACwaXiLXNXLe5En3KzCxuEyYcfveMGWT9wj4sh";
+      const pumpUrl = mint && mint !== "5mB6hVACwaXiLXNXLe5En3KzCxuEyYcfveMGWT9wj4sh"
         ? `https://pump.fun/coin/${mint}`
         : (window.GMAX.pumpUrl || "https://pump.fun");
       document.getElementById("ca").textContent = mint;
